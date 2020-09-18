@@ -26,14 +26,7 @@ export default function Projects() {
                     description="E-commerce para pedir comida en menos de 1 minuto, integrado con WhatsApp."
                     screenshot="/salata.png"
                     role="Founder & Dev"
-                    imageStyle={{ width: "14rem" }}
-                />
-                <ProjectCard
-                    className="hover:bg-green-400 text-white bg-gray-500"
-                    title="MixHub"
-                    tagline="Streaming de espectáculos musicales"
-                    description="Plataforma de streaming para djs pay-to-view de música en vivo."
-                    role="CoFounder & Dev"
+                    imageStyle={{ width: "11.5rem" }}
                 />
                 <ProjectCard
                     className="hover:bg-blue-500 text-white bg-gray-500"
@@ -42,6 +35,13 @@ export default function Projects() {
                     screenshot="/flux.png"
                     role="Founder & Dev"
                     imageStyle={{ width: "24rem" }}
+                />
+                <ProjectCard
+                    className="hover:bg-green-400 text-white bg-gray-500"
+                    title="MixHub"
+                    tagline="Streaming de espectáculos musicales"
+                    description="Plataforma de streaming para djs pay-to-view de música en vivo."
+                    role="CoFounder & Dev"
                 />
                 <div
                     className="md:col-span-2 relative transition bottom-0 left-0 duration-75 rounded-sm border-dashed border-4 border-gray-200 transform hover:scale-95 flex items-center justify-center"
