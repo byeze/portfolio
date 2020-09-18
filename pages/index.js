@@ -16,7 +16,7 @@ export default function Home() {
     }
 
     return (
-        <div className="container relative">
+        <div className="relative">
             <Head>
                 <title>Ezequiel Calonge | Portfolio</title>
                 <link rel="icon" href="/favicon.ico" />
@@ -74,18 +74,21 @@ export default function Home() {
 
                     <div className="leading-relaxed">
                         <p className="text-gray-600 text-justify">
-                            Desde chico, siempre me encató toda la tecnologia,
-                            me gustaba ver como funcionaba todo y como podía eso
-                            solucionar mis cosas. A los 10 años escribí mi
-                            primera linea de código en Visual Basic.
+                            Desde chico, siempre me fascinó la tecnología. Me
+                            encantaba ver como funcionaban las cosas y como
+                            podían solucionar mis problemas.
                         </p>
                         <p className="text-gray-600 text-justify">
-                            Aprendí varios lenguajes y frameworks de manera
-                            autodidácta, y desde ese momento aprendo todo de esa
-                            manera. A su vez, trabajé en el entretenimiento y
-                            redes sociales, manejando equipos de audio/video y
-                            manejando cuentas de Instagram. Amo conocer{" "}
-                            <span className="italic">todo</span> de todo.
+                            Aprendí diversos lenguajes y frameworks de manera
+                            autodidacta, y a los 10 años, escribí mi primera
+                            linea en Visual Basic. Desde ese momento aprendo
+                            todo port mi cuenta.
+                        </p>
+                        <p className="text-gray-600 text-justify">
+                            A su vez, trabajé en el entretenimiento y redes
+                            sociales, manejando equipos de audio/video y
+                            manejando cuentas de Instagram.<br></br>¡Amo conocer{" "}
+                            <span className="italic">todo</span> de todo!
                         </p>
                     </div>
 
