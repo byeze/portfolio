@@ -82,7 +82,7 @@ export default function Home() {
                             Aprendí diversos lenguajes y frameworks de manera
                             autodidacta, y a los 10 años, escribí mi primera
                             linea en Visual Basic. Desde ese momento aprendo
-                            todo port mi cuenta.
+                            todo por mi cuenta.
                         </p>
                         <p className="text-gray-600 text-justify">
                             A su vez, trabajé en el entretenimiento y redes
