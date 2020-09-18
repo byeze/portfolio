@@ -1,209 +1,201 @@
-import Head from 'next/head'
+import Head from "next/head";
+import BottomContact from "../components/BottomContact";
+import Container from "../components/Container";
+import Footer from "../components/Footer";
+import Guido from "../components/Guido";
+import Projects from "../components/Projects";
+import { useState } from "react";
 
 export default function Home() {
-  return (
-    <div className="container">
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    const [guido, setGuido] = useState(false);
 
-      <main>
-        <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+    function showIncorrectGuido() {
+        if (guido) return;
+        setGuido(true);
+        setTimeout(() => setGuido(false), 5500);
+    }
 
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
+    return (
+        <div className="container relative">
+            <Head>
+                <title>Ezequiel Calonge | Portfolio</title>
+                <link rel="icon" href="/favicon.ico" />
 
-        <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+                <meta name="title" content="Ezequiel Calonge | Portfolio" />
+                <meta
+                    name="description"
+                    content="Hola! Soy Eze y soy programador. Este es mi portfolio."
+                />
 
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="/banner.png" />
+                <meta
+                    property="og:title"
+                    content="Ezequiel Calonge | Portfolio"
+                />
+                <meta
+                    property="og:description"
+                    content="Hola! Soy Eze y soy programador. Este es mi portfolio."
+                />
+                <meta property="og:image" content="/banner.png" />
 
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="card"
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+                <meta property="twitter:card" content="summary_large_image" />
+                <meta property="twitter:url" content="/banner.png" />
+                <meta
+                    property="twitter:title"
+                    content="Ezequiel Calonge | Portfolio"
+                />
+                <meta
+                    property="twitter:description"
+                    content="Hola! Soy Eze y soy programador. Este es mi portfolio."
+                />
+            </Head>
 
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="card"
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+            <main>
+                <div className="p-10 md:p-16 bg-gray-800 h-screen flex items-center">
+                    <div className="w-full md:w-1/2">
+                        <h1 className="font-semibold text-white text-6xl">
+                            Hola! Soy{" "}
+                            <span className="text-purple-400 underline">
+                                Ezequiel Calonge
+                            </span>
+                            .
+                        </h1>
+                        <p className="text-gray-100 text-sm">
+                            Soy desarrollador fullstack.
+                        </p>
+                    </div>
+                </div>
+
+                <Container>
+                    <h2 className="text-4xl md:text-6xl font-bold tracking-wide">
+                        Acerca de mi
+                    </h2>
+
+                    <div className="leading-relaxed">
+                        <p className="text-gray-600 text-justify">
+                            Desde chico, siempre me encató toda la tecnologia,
+                            me gustaba ver como funcionaba todo y como podía eso
+                            solucionar mis cosas. A los 10 años escribí mi
+                            primera linea de código en Visual Basic.
+                        </p>
+                        <p className="text-gray-600 text-justify">
+                            Aprendí varios lenguajes y frameworks de manera
+                            autodidácta, y desde ese momento aprendo todo de esa
+                            manera. A su vez, trabajé en el entretenimiento y
+                            redes sociales, manejando equipos de audio/video y
+                            manejando cuentas de Instagram. Amo conocer{" "}
+                            <span className="italic">todo</span> de todo.
+                        </p>
+                    </div>
+
+                    <h2 className="text-gray-600 text-2xl font-semibold mt-3">
+                        Me encanta 😎
+                    </h2>
+
+                    <div className="grid grid-cols-2 space-y-2">
+                        <label
+                            className="inline-flex items-center"
+                            onClick={() => showIncorrectGuido()}
+                        >
+                            <img
+                                src="/checkbox.svg"
+                                className="w-5 h-5 md:w-10 md:h-10"
+                                alt="-"
+                            />
+                            <span className="ml-2 text-gray-700 select-none">
+                                Salir de mi zona de confort
+                            </span>
+                        </label>
+                        <label
+                            className="inline-flex items-center"
+                            onClick={() => showIncorrectGuido()}
+                        >
+                            <img
+                                src="/checkbox.svg"
+                                className="w-5 h-5 md:w-10 md:h-10"
+                                alt="-"
+                            />
+                            <span className="ml-2 text-gray-700 select-none">
+                                Hacer nuevos y buenos proyectos
+                            </span>
+                        </label>
+                        <label
+                            className="inline-flex items-center"
+                            onClick={() => showIncorrectGuido()}
+                        >
+                            <img
+                                src="/checkbox.svg"
+                                className="w-5 h-5 md:w-10 md:h-10"
+                                alt="-"
+                            />
+                            <span className="ml-2 text-gray-700 select-none">
+                                Crear cosas innovadoras
+                            </span>
+                        </label>
+                        <label
+                            className="inline-flex items-center"
+                            onClick={() => showIncorrectGuido()}
+                        >
+                            <img
+                                src="/checkbox.svg"
+                                className="w-5 h-5 md:w-10 md:h-10"
+                                alt="-"
+                            />
+                            <span className="ml-2 text-gray-700 select-none">
+                                Programar
+                            </span>
+                        </label>
+                        <label
+                            className="inline-flex items-center"
+                            onClick={() => showIncorrectGuido()}
+                        >
+                            <img
+                                src="/checkbox.svg"
+                                className="w-5 h-5 md:w-10 md:h-10"
+                                alt="-"
+                            />
+                            <span className="ml-2 text-gray-700 select-none">
+                                Escuchar música
+                            </span>
+                        </label>
+                        <label
+                            className="inline-flex items-center"
+                            onClick={() => showIncorrectGuido()}
+                        >
+                            <img
+                                src="/checkbox.svg"
+                                className="w-5 h-5 md:w-10 md:h-10"
+                                alt="-"
+                            />
+                            <span className="ml-2 text-gray-700 select-none">
+                                El café y la lasagna
+                            </span>
+                        </label>
+                        <label
+                            className="inline-flex items-center"
+                            onClick={() => showIncorrectGuido()}
+                        >
+                            <img
+                                src="/checkbox.svg"
+                                className="w-5 h-5 md:w-10 md:h-10"
+                                alt="-"
+                            />
+                            <span className="ml-2 text-gray-700 select-none">
+                                Estar siempre movimiento y un paso adelante
+                            </span>
+                        </label>
+                    </div>
+                </Container>
+
+                <Projects />
+
+                <BottomContact />
+
+                {guido ? <Guido show={guido} /> : null}
+
+                <Footer />
+            </main>
         </div>
-      </main>
-
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
-        </a>
-      </footer>
-
-      <style jsx>{`
-        .container {
-          min-height: 100vh;
-          padding: 0 0.5rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        main {
-          padding: 5rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer img {
-          margin-left: 0.5rem;
-        }
-
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        a {
-          color: inherit;
-          text-decoration: none;
-        }
-
-        .title a {
-          color: #0070f3;
-          text-decoration: none;
-        }
-
-        .title a:hover,
-        .title a:focus,
-        .title a:active {
-          text-decoration: underline;
-        }
-
-        .title {
-          margin: 0;
-          line-height: 1.15;
-          font-size: 4rem;
-        }
-
-        .title,
-        .description {
-          text-align: center;
-        }
-
-        .description {
-          line-height: 1.5;
-          font-size: 1.5rem;
-        }
-
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-        }
-
-        .grid {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-wrap: wrap;
-
-          max-width: 800px;
-          margin-top: 3rem;
-        }
-
-        .card {
-          margin: 1rem;
-          flex-basis: 45%;
-          padding: 1.5rem;
-          text-align: left;
-          color: inherit;
-          text-decoration: none;
-          border: 1px solid #eaeaea;
-          border-radius: 10px;
-          transition: color 0.15s ease, border-color 0.15s ease;
-        }
-
-        .card:hover,
-        .card:focus,
-        .card:active {
-          color: #0070f3;
-          border-color: #0070f3;
-        }
-
-        .card h3 {
-          margin: 0 0 1rem 0;
-          font-size: 1.5rem;
-        }
-
-        .card p {
-          margin: 0;
-          font-size: 1.25rem;
-          line-height: 1.5;
-        }
-
-        .logo {
-          height: 1em;
-        }
-
-        @media (max-width: 600px) {
-          .grid {
-            width: 100%;
-            flex-direction: column;
-          }
-        }
-      `}</style>
-
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-        }
-
-        * {
-          box-sizing: border-box;
-        }
-      `}</style>
-    </div>
-  )
+    );
 }
