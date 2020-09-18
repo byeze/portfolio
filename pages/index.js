@@ -98,7 +98,7 @@ export default function Home() {
 
                     <div className="grid grid-cols-2 space-y-2">
                         <label
-                            className="inline-flex items-center"
+                            className="inline-flex items-center cursor-pointer"
                             onClick={() => showIncorrectGuido()}
                         >
                             <img
@@ -111,7 +111,7 @@ export default function Home() {
                             </span>
                         </label>
                         <label
-                            className="inline-flex items-center"
+                            className="inline-flex items-center cursor-pointer"
                             onClick={() => showIncorrectGuido()}
                         >
                             <img
@@ -124,7 +124,7 @@ export default function Home() {
                             </span>
                         </label>
                         <label
-                            className="inline-flex items-center"
+                            className="inline-flex items-center cursor-pointer"
                             onClick={() => showIncorrectGuido()}
                         >
                             <img
@@ -137,7 +137,7 @@ export default function Home() {
                             </span>
                         </label>
                         <label
-                            className="inline-flex items-center"
+                            className="inline-flex items-center cursor-pointer"
                             onClick={() => showIncorrectGuido()}
                         >
                             <img
@@ -150,7 +150,7 @@ export default function Home() {
                             </span>
                         </label>
                         <label
-                            className="inline-flex items-center"
+                            className="inline-flex items-center cursor-pointer"
                             onClick={() => showIncorrectGuido()}
                         >
                             <img
@@ -163,7 +163,7 @@ export default function Home() {
                             </span>
                         </label>
                         <label
-                            className="inline-flex items-center"
+                            className="inline-flex items-center cursor-pointer"
                             onClick={() => showIncorrectGuido()}
                         >
                             <img
@@ -176,7 +176,7 @@ export default function Home() {
                             </span>
                         </label>
                         <label
-                            className="inline-flex items-center"
+                            className="inline-flex items-center cursor-pointer"
                             onClick={() => showIncorrectGuido()}
                         >
                             <img
