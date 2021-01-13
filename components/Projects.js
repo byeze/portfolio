@@ -43,6 +43,20 @@ export default function Projects() {
                     description="Plataforma de streaming para djs pay-to-view de música en vivo."
                     role="CoFounder & Dev"
                 />
+                <ProjectCard
+                    className="hover:bg-blue-400 text-white bg-gray-500"
+                    title="DonBebidas"
+                    tagline="E-Commerce para la venta de bebidas"
+                    description="Compra de bebidas con bot automatizado en WhatsApp."
+                    role="Developer"
+                />
+                <ProjectCard
+                    className="hover:bg-blue-400 text-white bg-gray-500"
+                    title="MetaPue"
+                    tagline="Pedir taxis de manera segura"
+                    description="Pedí un taxi o remis en la ciudad de Salta de manera mas facil"
+                    role="Developer"
+                />
                 <div
                     className="md:col-span-2 relative transition bottom-0 left-0 duration-75 rounded-sm border-dashed border-4 border-gray-200 transform hover:scale-95 flex items-center justify-center"
                     style={{ height: 458 }}
